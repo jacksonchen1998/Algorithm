@@ -19,7 +19,7 @@ int BinarySearch(int* storage, int x, int num, int low, int high){
 	}
 } 
 
-int main(){
+int main(char *argv[], int argc){
 	int number = 10, x;
 	int storage[number] = {-15, -5, 0, 1, 3, 5, 7, 9, 13, 14};
 	for(int i = 0; i < number; i++)
