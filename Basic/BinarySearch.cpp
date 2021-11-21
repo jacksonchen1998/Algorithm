@@ -3,11 +3,11 @@
 using namespace std;
 
 int BinarySearch(int* storage, int x, int num, int low, int high){
-	int middle = low + (high - low) / 2;
+	int middle = low + (high - low) / 2; // prevent from overflow
 	if(low > high)
 		return -1;
 		
-	while(low <= high){
+	while(low <= high){ // boundary
 		if(storage[middle] == x){
 			cout << "Found " << x <<" in the index " << middle <<"\n";
 			return middle;
