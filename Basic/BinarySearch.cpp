@@ -3,15 +3,15 @@
 using namespace std;
 
 void BinarySearch(int* storage, int x, int num, int low, int high){
-	int middle = (low + high) / 2;
-	if(storage[middle] == x){
-		cout << "Found " << x <<" in the index " << middle <<"\n";
-	}else if(storage[middle] > x){
-		BinarySearch(storage, x, num, low, middle - 1);
-	}else if(storage[middle] < x){
-		BinarySearch(storage, x, num, middle + 1, high);
-	}else{
-		cout << "Couldn't find " << x <<"\n";
+	int middle = low + (high - low) / 2;
+	while(low < high){
+		if(storage[middle] == x){
+			cout << "Found " << x <<" in the index " << middle <<"\n";
+		}else if(storage[middle] > x){
+			BinarySearch(storage, x, num, low, middle - 1);
+		}else if(storage[middle] < x){
+			BinarySearch(storage, x, num, middle + 1, high);
+		}
 	}
 } 
 
