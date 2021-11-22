@@ -4,9 +4,9 @@
 using namespace std;
 
 void swap(int *a, int *b){ // swap function
-	int temp = *a;
-	*a = *b;
-	*b = temp;
+	int *temp = a;
+	a = b;
+	b = temp;
 }
 
 void QuickSort(int *storage, const int left, const int right){
@@ -25,7 +25,7 @@ void QuickSort(int *storage, const int left, const int right){
 				swap(storage[i], storage[j]);
 		}while(i < j);
 		
-		swap(&storage[left], &storage[j]);
+		swap(storage[left], storage[j]);
 		
 		QuickSort(storage, left, j - 1);
 		QuickSort(storage, j + 1, right); 
