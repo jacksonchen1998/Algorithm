@@ -50,21 +50,23 @@ void MergeSort(int *storage, int left, int right){
 	}
 }
 
+void printArray(int *storage, int num){
+	for(int i = 0; i < num; i++)
+		cout << storage[i] << setw(5);
+	cout << "\n";
+}
+
 int main(int argc, char *argv[]){
 	int number = 10;
 	int array[number] = {-1, 23, 4, -8, 2, 24, 0, -11, 66, 100};
 	
 	cout << "Before : ";
-	for(int i = 0; i < number; i++)
-		cout << array[i] << setw(5);
-	cout << "\n";
+	printArray(array, number);
 		
 	MergeSort(array, 0, number - 1); // Merge sort
 	
 	cout << "After : ";
-	for(int i = 0; i < number; i++)
-		cout << array[i] << setw(5);
-	cout << "\n";
+	printArray(array, number);
 	
 	system("PAUSE");
 	return 0;
