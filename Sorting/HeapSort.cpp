@@ -53,7 +53,7 @@ int main(int argc, char *argv[]){
 	cout << "Before : ";
 	printArray(array, number);
 		
-	HeapSort(array, number); // Merge sort
+	HeapSort(array, number); // Heap sort
 	
 	cout << "After : ";
 	printArray(array, number);
