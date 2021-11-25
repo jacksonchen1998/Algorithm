@@ -12,7 +12,7 @@ void swap(int *a, int *b){
 void SelectionSort(int *storage, int number){
 	for(int i = 0; i < number; i++){
 		int pointer = i;
-		for(int j = i + 1; j <= number; j++){
+		for(int j = i + 1; j < number; j++){
 			if(storage[j] < storage[pointer]) // swap if find smaller value in array
 				pointer = j;
 		}
