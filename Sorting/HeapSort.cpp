@@ -32,7 +32,7 @@ void HeapSort(int *storage, int num){
 	for(int i = (num / 2) - 1; i >= 0; i--) // build max heap
 		Heapify(storage, num, i);
 	
-	for(int i = num - 1; i > 0; i--){ // delete root, inset the last node into root
+	for(int i = num - 1; i > 0; i--){ // delete root, insert the last node into root
 		
 		swap(storage[0], storage[i]);
 		
