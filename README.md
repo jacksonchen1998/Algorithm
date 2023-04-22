@@ -10,6 +10,7 @@ Before LeetCode, the basic data structure and algorithm should be learned first.
 
 ## Data Structure
 - Array
+- Vector
 - Linked List
 - Stack
 - Queue
