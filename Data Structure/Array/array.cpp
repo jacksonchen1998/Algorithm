@@ -1,7 +1,7 @@
 // Data Structure
 // Array
 
-# include <iostream>
+#include <iostream>
 
 class Array {
 private:
