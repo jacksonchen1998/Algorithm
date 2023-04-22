@@ -40,6 +40,9 @@ class Vector:
             print(i, end = " ")
         print()
         
+    def remove(self, val):
+        self.vec.remove(val)
+        
         
 if __name__ == "__main__":
     vec = Vector([])
@@ -72,5 +75,9 @@ if __name__ == "__main__":
     vec.print()
     
     vec.reverse()
+    
+    vec.print()
+    
+    vec.remove(0)
     
     vec.print()
