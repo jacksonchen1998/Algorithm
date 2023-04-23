@@ -44,3 +44,27 @@ In Python, vector can be implemented by list.
 - `remove()`: remove the value with value, `list.remove(value)`, same value will only remove the first one
 - `sort()`
 - `reverse()`
+
+## Linked List
+
+> C++
+
+[Linked List vs Array](https://www.geeksforgeeks.org/linked-list-vs-array/)
+
+![Linked List vs Array](./image/array_linkedlist.png)
+
+- Insertion
+- Deletion
+- Traversal
+- Reverse
+
+![Reverse Linked List](./image/reverse_linkedlist.gif)
+
+- Merge
+- Sort
+- Search
+- Circular Linked List
+
+> Python
+
+In Python, since Python don't have pointer, so the linked list is implemented by `Node` class.
